@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculatrice Scientifique</title>
+  <style>
+    .calculator {
+      width: 300px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+
+    .calculator input[type="text"] {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .calculator .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .calculator input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      background-color: #d4d4d4;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .calculator input[type="button"]:hover {
+      background-color: #e0e0e0;
+    }
+
+    .calculator .row:first-child input[type="button"] {
+      grid-column: span 4;
+      background-color: #009688;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(2) input[type="button"] {
+      background-color: #FF5722;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(3) input[type="button"] {
+      background-color: #E91E63;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(4) input[type="button"] {
+      background-color: #3F51B5;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(5) input[type="button"] {
+      background-color: #673AB7;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(6) input[type="button"] {
+      background-color: #9C27B0;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(7) input[type="button"] {
+      background-color: #607D8B;
+      color: #fff;
+    }
+
+    .calculator .row:nth-child(3) input[type="button"]:nth-child(-n+4),
+    .calculator .row:nth-child(4) input[type="button"]:nth-child(-n+4),
+    .calculator .row:nth-child(5) input[type="button"]:nth-child(-n+4),
+    .calculator .row:nth-child(6) input[type="button"]:nth-child(-n+4),
+    .calculator .row:nth-child(7) input[type="button"]:nth-child(-n+4),
+    .calculator .row:nth-child(8) input[type="button"]:nth-child(-n+4) {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="grid">
+      <input type="button" value="clear" style="background-color: #F0FFFF;">
+      <input type="button" value="(">
+      <input type="button" value=")">
+      <input type="button" value=",">
+      <input type="button" value="arctan">
+      <input type="button" value="arcsin">
+      <input type="button" value="arccos">
+      <input type="button" value="x">
+      <input type="button" value="y">
+      <input type="button" value="ln">
+      <input type="button" value="1/x">
+      <input type="button" value="π">
+      <input type="button" value="i">
+      <input type="button" value="sin">
+      <input type="button" value="cos">
+      <input type="button" value="tan">
+      <input type="button" value="sqrt">
+      <input type="button" value="log">
+      <input type="button" value="exp">
+      <input type="button" value="^">
+      <input type="button" value="7" style="background-color: #fff;">
+      <input type="button" value="8" style="background-color: #fff;">
+      <input type="button" value="9" style="background-color: #fff;">
+      <input type="button" value="/" style="background-color: #787F7F;">
+      <input type="button" value="4" style="background-color: #fff;">
+      <input type="button" value="5" style="background-color: #fff;">
+      <input type="button" value="6" style="background-color: #fff;">
+      <input type="button" value="*" style="background-color: #787F7F;">
+      <input type="button" value="1" style="background-color: #fff;">
+      <input type="button" value="2" style="background-color: #fff;">
+      <input type="button" value="3" style="background-color: #fff;">
+      <input type="button" value="-" style="background-color: #787F7F;">
+      <input type="button" value="0" style="background-color: #fff;">
+      <input type="button" value="." style="background-color: #787F7F;">
+      <input type="button" value="=" style="background-color: #787F7F;">
+      <input type="button" value="+" style="background-color: #787F7F;" >
+    </div>
+  </div>
+</body>
+</html>
